@@ -153,7 +153,7 @@
         <hive.storage-api.version>2.7.0</hive.storage-api.version>
         <hive.archive.name>apache-hive-${hive.engine.hive.version}-bin.tar.gz</hive.archive.name>
         <hive.archive.mirror>${apache.archive.dist}/hive/hive-${hive.engine.hive.version}</hive.archive.mirror>
-        <hive.archive.download.skip>false</hive.archive.download.skip>
+        <hive.archive.download.skip>true</hive.archive.download.skip>
         <httpclient.version>4.5.14</httpclient.version>
         <httpcore.version>4.4.16</httpcore.version>
         <hudi.version>0.12.0</hudi.version>
@@ -192,7 +192,7 @@
         <spark.binary.version>3.3</spark.binary.version>
         <spark.archive.name>spark-${spark.version}-bin-hadoop3.tgz</spark.archive.name>
         <spark.archive.mirror>${apache.archive.dist}/spark/spark-${spark.version}</spark.archive.mirror>
-        <spark.archive.download.skip>false</spark.archive.download.skip>
+        <spark.archive.download.skip>true</spark.archive.download.skip>
         <swagger.version>2.2.1</swagger.version>
         <swagger-ui.version>4.9.1</swagger-ui.version>
         <testcontainers-scala.version>0.40.12</testcontainers-scala.version>

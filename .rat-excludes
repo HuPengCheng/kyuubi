@@ -54,3 +54,5 @@ build/scala-*/**
 **/node_modules/**
 **/gen/*
 **/*.tokens
+Dockerfile*
+build*

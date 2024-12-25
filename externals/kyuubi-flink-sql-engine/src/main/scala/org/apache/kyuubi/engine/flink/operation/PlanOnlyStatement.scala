@@ -19,6 +19,7 @@ package org.apache.kyuubi.engine.flink.operation
 
 import org.apache.flink.table.api.TableEnvironment
 import org.apache.flink.table.operations.command._
+import org.apache.flink.table.operations.ddl.CreateCatalogFunctionOperation
 
 import org.apache.kyuubi.engine.flink.FlinkEngineUtils.isFlinkVersionAtMost
 import org.apache.kyuubi.engine.flink.result.ResultSetUtil
@@ -48,6 +49,7 @@ class PlanOnlyStatement(
     try {
       val operation = executor.parseStatement(sessionId, statement)
       operation match {
+        case createCatalogFunctionOperation: CreateCatalogFunctionOperation => ()
         case setOperation: SetOperation =>
           resultSet = OperationUtils.runSetOperation(setOperation, executor, sessionId)
         case resetOperation: ResetOperation =>
